@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1EB6E8DE2167B56D00F61F43 /* MovieModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EB6E8DD2167B56D00F61F43 /* MovieModel.swift */; };
+		1EB6E8E02167C07400F61F43 /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EB6E8DF2167C07400F61F43 /* AppColors.swift */; };
+		1EB6E8E42167C56700F61F43 /* lang-en.json in Resources */ = {isa = PBXBuildFile; fileRef = 1EB6E8E32167C56700F61F43 /* lang-en.json */; };
+		1EB6E8E62167C58300F61F43 /* lang-ar.json in Resources */ = {isa = PBXBuildFile; fileRef = 1EB6E8E52167C58300F61F43 /* lang-ar.json */; };
+		1EB6E8E82167C67900F61F43 /* LocalizationConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EB6E8E72167C67900F61F43 /* LocalizationConfig.swift */; };
 		1ECA6968215FDF3600E2C1B4 /* ViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ECA6967215FDF3600E2C1B4 /* ViewModelType.swift */; };
 		1ECA696A215FED9000E2C1B4 /* MoviesResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ECA6969215FED9000E2C1B4 /* MoviesResponseModel.swift */; };
 		1ECA6971215FF08300E2C1B4 /* AlertHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ECA6970215FF08300E2C1B4 /* AlertHelper.swift */; };
@@ -29,6 +34,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1EB6E8DD2167B56D00F61F43 /* MovieModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieModel.swift; sourceTree = "<group>"; };
+		1EB6E8DF2167C07400F61F43 /* AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
+		1EB6E8E32167C56700F61F43 /* lang-en.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "lang-en.json"; sourceTree = "<group>"; };
+		1EB6E8E52167C58300F61F43 /* lang-ar.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "lang-ar.json"; sourceTree = "<group>"; };
+		1EB6E8E72167C67900F61F43 /* LocalizationConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizationConfig.swift; sourceTree = "<group>"; };
 		1ECA6967215FDF3600E2C1B4 /* ViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelType.swift; sourceTree = "<group>"; };
 		1ECA6969215FED9000E2C1B4 /* MoviesResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesResponseModel.swift; sourceTree = "<group>"; };
 		1ECA6970215FF08300E2C1B4 /* AlertHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertHelper.swift; sourceTree = "<group>"; };
@@ -73,6 +83,25 @@
 				6DA530C9B68F30C735CEE471 /* Pods-MoviesApp.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		1EB6E8E12167C41200F61F43 /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				1EB6E8E22167C42200F61F43 /* strings */,
+				1ED68C81215F6EE700CCE880 /* Assets.xcassets */,
+			);
+			path = resources;
+			sourceTree = "<group>";
+		};
+		1EB6E8E22167C42200F61F43 /* strings */ = {
+			isa = PBXGroup;
+			children = (
+				1EB6E8E52167C58300F61F43 /* lang-ar.json */,
+				1EB6E8E32167C56700F61F43 /* lang-en.json */,
+				1EB6E8E72167C67900F61F43 /* LocalizationConfig.swift */,
+			);
+			path = strings;
 			sourceTree = "<group>";
 		};
 		1ECA6966215FDE4400E2C1B4 /* protocols */ = {
@@ -145,6 +174,7 @@
 		1ED68C76215F6EE500CCE880 /* MoviesApp */ = {
 			isa = PBXGroup;
 			children = (
+				1EB6E8E12167C41200F61F43 /* resources */,
 				1ECA696B215FEFDB00E2C1B4 /* viewControllers */,
 				1ECA6966215FDE4400E2C1B4 /* protocols */,
 				1ED68CAA215F8C4900CCE880 /* helper */,
@@ -153,7 +183,6 @@
 				1ED68C99215F734800CCE880 /* base */,
 				1ED68C77215F6EE500CCE880 /* AppDelegate.swift */,
 				1ED68C7B215F6EE500CCE880 /* Main.storyboard */,
-				1ED68C81215F6EE700CCE880 /* Assets.xcassets */,
 				1ED68C83215F6EE700CCE880 /* LaunchScreen.storyboard */,
 				1ED68C86215F6EE700CCE880 /* Info.plist */,
 				1ED68C7E215F6EE500CCE880 /* MoviesApp.xcdatamodeld */,
@@ -176,6 +205,7 @@
 			isa = PBXGroup;
 			children = (
 				1ECA6969215FED9000E2C1B4 /* MoviesResponseModel.swift */,
+				1EB6E8DD2167B56D00F61F43 /* MovieModel.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -185,6 +215,7 @@
 			children = (
 				1ED68C9C215F736200CCE880 /* Constants.swift */,
 				1ED68CAF215FA26500CCE880 /* Navigator.swift */,
+				1EB6E8DF2167C07400F61F43 /* AppColors.swift */,
 			);
 			path = utility;
 			sourceTree = "<group>";
@@ -270,7 +301,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				1ED68C85215F6EE700CCE880 /* LaunchScreen.storyboard in Resources */,
+				1EB6E8E62167C58300F61F43 /* lang-ar.json in Resources */,
 				1ED68C82215F6EE700CCE880 /* Assets.xcassets in Resources */,
+				1EB6E8E42167C56700F61F43 /* lang-en.json in Resources */,
 				1ED68C7D215F6EE500CCE880 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -287,25 +320,43 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-MoviesApp/Pods-MoviesApp-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/AlamofireObjectMapper/AlamofireObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/DLLocalNotifications/DLLocalNotifications.framework",
+				"${BUILT_PRODUCTS_DIR}/Hue/Hue.framework",
 				"${BUILT_PRODUCTS_DIR}/JGProgressHUD/JGProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/Localize/Localize.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/ReachabilitySwift/Reachability.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Sugar/Sugar.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftEventBus/SwiftEventBus.framework",
 				"${BUILT_PRODUCTS_DIR}/TTGSnackbar/TTGSnackbar.framework",
+				"${BUILT_PRODUCTS_DIR}/Tactile/Tactile.framework",
+				"${BUILT_PRODUCTS_DIR}/moa/moa.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DLLocalNotifications.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Hue.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JGProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Localize.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reachability.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Sugar.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftEventBus.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TTGSnackbar.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Tactile.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/moa.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -344,11 +395,14 @@
 				1ECA6973215FF1A100E2C1B4 /* BottomSheetHelper.swift in Sources */,
 				1ECA697721600B5100E2C1B4 /* NavBarHelper.swift in Sources */,
 				1ED68CA5215F740A00CCE880 /* UIViewController+helpers.swift in Sources */,
+				1EB6E8E82167C67900F61F43 /* LocalizationConfig.swift in Sources */,
 				1ED68CA7215F74A200CCE880 /* BaseViewController.swift in Sources */,
 				1ECA6968215FDF3600E2C1B4 /* ViewModelType.swift in Sources */,
 				1ECA6975215FF1C000E2C1B4 /* VC+Tableview.swift in Sources */,
 				1ED68C78215F6EE500CCE880 /* AppDelegate.swift in Sources */,
 				1ECA696A215FED9000E2C1B4 /* MoviesResponseModel.swift in Sources */,
+				1EB6E8DE2167B56D00F61F43 /* MovieModel.swift in Sources */,
+				1EB6E8E02167C07400F61F43 /* AppColors.swift in Sources */,
 				1ED68C9D215F736200CCE880 /* Constants.swift in Sources */,
 				1ED68CAE215F8C7500CCE880 /* BaseModel.swift in Sources */,
 				1ED68CAC215F8C6500CCE880 /* ApiHelper.swift in Sources */,

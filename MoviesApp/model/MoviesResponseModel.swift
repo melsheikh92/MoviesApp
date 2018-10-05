@@ -11,11 +11,10 @@ import ObjectMapper
 class MoviesResponseModel : BaseModel{
     
     
-    var data:[String]?
+    var data:[MovieModel]?
     override func mapping(map: Map) {
         super.mapping(map: map)
-        data <- map[""]
-        
+        data <- map["result"]
     }
     
 }

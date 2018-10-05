@@ -9,7 +9,9 @@
 import Foundation
 import ObjectMapper
 class BaseModel: Mappable{
-    
+    var page:Int?
+    var totalResult:Int?
+    var totalPages:Int? 
     
     
     var isSuccess:Bool?
@@ -18,7 +20,9 @@ class BaseModel: Mappable{
     }
     
     func mapping(map: Map) {
-        
+        page <- map["page"]
+        totalPages <- map["total_pages"]
+        totalResult <- map["total_results"]
     }
     
     

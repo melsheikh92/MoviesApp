@@ -11,6 +11,18 @@ target 'MoviesApp' do
     pod 'TTGSnackbar'
     pod 'ReachabilitySwift'
     pod 'SwiftEventBus'
+    pod 'Sugar'
+    pod 'RealmSwift'
+    pod 'Hue'
+    pod 'Localize' , '~> 2.0.5'
+    pod 'moa', '~> 10.0'
+    pod 'Kingfisher'
+    pod 'DLLocalNotifications'
+    pod 'Tactile', '~> 1.0'
+    pod 'Proposer'
+    pod 'Observable'
+    pod 'Shades'
+    pod 'Pageboy', '~> 2.6'
     
     # Pods for MoviesApp
     
